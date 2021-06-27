@@ -1,0 +1,30 @@
+package:
+    name: pyramses
+    version: '0.0.21'
+source:
+    path: ../src
+
+build:
+    noarch: generic
+
+requirements:
+    build:
+        - python
+        - numpy
+        - scipy
+        - matplotlib
+        - mkl
+        - intel-openmp
+    run:
+        - python
+        - mkl
+        - numpy
+        - scipy
+        - matplotlib
+        - intel-openmp
+
+about:
+    home: https://sps.cut.ac.cy/pyramses
+    license: Other/Proprietary License
+    license_file: LICENSE.rst
+    summary: Python library for RAMSES dynamic simulator.
